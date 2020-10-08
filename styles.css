@@ -6,6 +6,7 @@ body {
     background-size: 1600px 1000px;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
   }
 
 .logo {
@@ -25,14 +26,14 @@ body {
 header {
     display: grid;
     grid-template-columns: 22% 10% 68%;
-    width: 96.2%;
+    width: 100%;
   }
 
 main {
     height: auto;
-    width: 96.2%;
+    width: 100%;
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 30% 42% 28%;
   }
 
 nav > a {
@@ -88,6 +89,7 @@ h2 {
     grid-column: 2/3;
     margin : 1% auto;
     font-style: italic;
+    text-align: center;
   }
 
 h3 {
@@ -123,3 +125,98 @@ button {
 section {
     margin: 0px 75px 15px 50px
   }
+
+  /* Typewriter for title start line */
+
+.text_1 {
+    animation: text1;
+  }
+
+.text_2 {
+    animation: text2;
+  }
+/*
+.text_3 {
+    animation: text3;
+}
+
+.text_4 {
+    animation: text4;
+}
+*/
+.text_1, .text_2/*, .text_3, .text_4*/ {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 20s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+  }
+
+.text_1::after, .text_2::after/*, .text_3::after, .text_4::after*/ {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+
+@keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+/*
+@keyframes text4 {
+  0% 50% 100% {
+    width: 0;
+  }
+
+    % % % % {
+      width: 16em;
+  }
+}
+
+@keyframes text3 {
+  0% 50% 100% {
+    width: 0;
+  }
+
+    % % % % {
+      width: 13em;
+  }
+}
+*/
+@keyframes text2 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  
+  60%, 90% {
+    width: 15em;
+  }
+}
+
+@keyframes text1 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  10%, 40% {
+    width: 14em;
+  }
+}
+
+/* Typewriter for title end line still testing */
+
+/* Scrollbar is optimized for Google Chrome */
+::-webkit-scrollbar-track {
+      box-shadow: none;
+      -webkit-box-shadow: inset 1px 0 2px lighten(lightgrey, 15%);
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      background-color: lighten(lightgrey, 45%); }
