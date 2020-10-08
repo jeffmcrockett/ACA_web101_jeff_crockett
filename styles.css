@@ -91,7 +91,9 @@ h2 {
   }
 
 h3 {
-    margin: 0px 50px 15px 50px 
+    margin: 0px 50px 15px 50px;
+    font-size: 25px;
+    font-style: italic;
   }
 
 .small-text {
@@ -118,6 +120,6 @@ button {
     font-style: italic;
   }
 
-div {
+section {
     margin: 0px 75px 15px 50px
   }
