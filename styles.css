@@ -149,7 +149,7 @@ section {
     white-space: nowrap;
     display: inline-block;
     position: relative;
-    animation-duration: 20s;
+    animation-duration: 24s;
     animation-timing-function: steps(25, end);
     animation-iteration-count: infinite;
   }
@@ -177,7 +177,7 @@ section {
     width: 0;
   }
 
-    % % % % {
+    % {
       width: 16em;
   }
 }
@@ -187,7 +187,7 @@ section {
     width: 0;
   }
 
-    % % % % {
+    % {
       width: 13em;
   }
 }
