@@ -101,7 +101,7 @@ h6 {
     margin-right: 28px;
     display: inline;
     float: right;
-    font-size: 14;
+    font-size: 16;
 }
 
 .workcontainer {
@@ -122,12 +122,11 @@ h6 {
 
 ul {
     margin-left: 10px;
-    margin-right: 25px;
+    margin-right: 35px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     font-family: 'Karla', sans-serif;
     font-size: 15;
-    text-align: justify;
 }
 
 i {
